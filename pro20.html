@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programa 20</title>
+</head>
+<body>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .main {
+            padding: 1em;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Las Mascotas</h1>
+    </header>
+
+    <nav>
+        <a href="#perros">Perros</a>
+        <a href="#gatos">Gatos</a>
+        <a href="#hamster">hamster</a>
+        <a href="#form">Inscripción</a>
+    </nav>
+
+    <div class="container">
+        <section id="perros" class="main">
+            <h2>Perros</h2>
+            <img src="img/los-10-sonidos-principales-del-perro.jpg"Perros">
+            <p>Los perros son animales muy leales y son conocidos como el mejor amigo del hombre.</p>
+        </section>
+
+        <section id="gatos" class="main">
+            <h2>Gatos</h2>
+            <img src="img/nationalgeographic_1468962.jpg" alt="Gatos">
+            <p>Los gatos son animales independientes y tienen una personalidad muy única.</p>
+        </section>
+
+        <section id="hamster" class="main">
+            <h2>hamster</h2>
+            <img src="img/hams.jpeg" alt="hamster">
+            <p>Los cricetinos son una subfamilia de roedores, conocidos comúnmente como hámsteres.​​ Se han identificado diecinueve especies actuales, agrupadas en siete géneros.</p>
+
+        <section id="form" class="main">
+            <h2>Inscripción</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre del participante:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required><br><br>
+                
+                <label>Sexo:</label>
+                <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer" required>
+                <label for="mujer">Mujer</label><br><br>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br><br>
+                
+               
+                
+                <input type="checkbox" id="info" name="info">
+                <label for="info">Deseo recibir información sobre novedades y ofertas</label><br><br>
+                
+                <input type="checkbox" id="condiciones" name="condiciones" required>
+                <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label><br><br>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Las Mascotas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
